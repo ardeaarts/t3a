@@ -1,0 +1,305 @@
+@import "utils.less";
+
+@media (max-width: 900px) {
+    .nav--main ul .social--icon {
+        display: none;
+    }
+}
+@media (min-width: 642px) and (max-width: 738px) {
+    .nav--main a {
+        padding: 1.25em .73em;
+    }
+}
+// --------------------------------------------------
+// Responsive: Portrait Tablets, Landscape phones
+// --------------------------------------------------
+@media (max-width: 769px) {
+    #page--index {
+        section {
+            padding: 3em 0;
+            min-height: 0;
+        }
+
+        .section--content {
+            height: auto;
+        }
+        
+        .anchor--journey {
+            display: none;
+        }
+
+        .section--1 {
+            .title {
+                top: 0;
+                .transform(none);
+            }
+            
+            .hero--title {
+                height: 161px;
+                margin: 0 1em;
+                background: url('../images/title-three-astronauts-mobile.png') no-repeat center center;
+                background-size: contain;
+            }
+        }
+
+        .section--2 {
+            .section--content {
+                top: 0;
+                .transform(none);
+            }
+
+
+            .earth {
+                max-width: 100%;
+                height: auto;
+
+                &:after {
+                    max-width: 100%;
+                    background-size: contain;
+                    top: 0;
+                }
+
+                .title {
+                    padding: 3em 0 0;
+                }
+            }
+        }
+
+        .section--3 {
+
+            .section--content {
+                top: 0;
+                .transform(none);
+            }
+
+            .scraps {
+                margin: 0;
+                text-align: center;
+                .clearfix;
+
+                .scrap--russia,
+                .scrap--usa,
+                .scrap--china {
+                    display: inline-block;
+                    width: 15%;
+                    margin: 0 5%;
+                    background-size: contain;
+                    .box-sizing(border-box);
+                }
+            }
+
+            .narrative {
+                margin: 0;
+            }
+
+            
+        }
+
+        .section--4 {
+            .section--content {
+                top: 0;
+                .transform(none);
+            }
+
+
+            .question--mars {
+                max-width: 90%;
+
+                .moon--phobos, 
+                .moon--deimos {
+                    display: none;
+                }
+
+            }
+
+            .question--russian,
+            .question--chinese {
+                display: none;
+            }
+        }
+
+
+        .section--5 {
+            .section--content {
+                top: 0;
+                .transform(none);
+            }
+        }
+
+        .section--6 {
+            font-size: 0.75em;
+
+            .section--content {
+                top: 0;
+                .transform(none);
+            }
+
+            .contact--buttons {
+                a {
+                    display: block;
+                    width: 90%;
+                    margin: 0.5em auto;
+                    .box-sizing(border-box);
+                }
+            }
+
+            .footer--social {
+                .social--links {
+                    a { margin: 0 0.1em; }
+                }
+            }
+        }
+
+
+    } // Page Index
+
+}
+
+// --------------------------------------------------
+// Responsive: Portrait phones
+// --------------------------------------------------
+
+@media (max-width: 641px) {
+    img {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav--main {
+        .nav--toggle {
+            display: block;
+            float: none;
+            background: rgba(0,0,0,0.8);
+        }
+        ul {
+            float: none;
+            margin: 0 0 1em 1em;
+            padding-bottom: 1em;
+            li {
+                display: block;
+            }
+        }
+        &.active {
+            border-bottom: 1px solid #777;
+        }
+    }
+    
+    
+    #page--index {
+        .narrative {
+            font-size: 1.125em;
+            line-height: 1.25;
+            padding: 0 1.5em !important;
+        }
+        
+        .section--1 {
+            .narrative {
+                margin: 0;
+            }
+        }
+
+        .section--2 {
+            .section--content {
+                padding-top: 5em;
+            }
+            img {
+                margin: 0 auto;
+                width: 200px;
+            }
+        }
+        
+        .section--3 {
+            .scraps {
+                .scrap--russia,
+                .scrap--usa,
+                .scrap--china {
+                    height: 128px;
+                }
+            }
+            .flags {
+                margin: 2em auto;
+            }
+            .flag--title {
+                display: none;
+            }
+        }
+        .section--4 {
+            .narrative {
+                margin-top: 2em;
+            }
+            .question--mars {
+                height: 375px;
+            }
+        }
+
+        .section--5 {
+            .premieres {
+                margin: 1em auto;
+                .premiere {
+                    display: block;
+                    float: none;
+                    width: 100%;
+                    padding: 0 0 1.5em;
+                    text-align: center;
+
+                    .title { margin: 0; }
+                    & > img { display: none; }
+                }
+
+            }
+            .supporters {
+                .supporter {
+                    font-size: 0.75em;
+                    img {
+                        opacity: 0.6;
+                    }
+                    .section--title {
+                        display: none;
+                    }
+                }
+                .supporter--nea {   
+                    img {
+                        max-width: auto;
+                        width: auto;
+                        max-height: 96px;
+                    }
+                }
+            }
+            
+            .section--title {
+                font-size: 1em;
+                padding: 2em 0;
+                span {
+                    font-size: 1.75em;
+                }
+            }
+
+        }
+    } // page--index
+    
+    #page--team {
+        section p,
+        section ul {
+            font-size: 0.875em;
+            line-height: 1.3;
+        }
+        .section--team--profiles {
+            h1 {
+                font-size: 1.875em;
+            }
+            h2 {
+                font-size: 1.3em;
+                line-height: 1.25;
+                letter-spacing: 0.2em;
+            }
+            h3 {
+                margin: 0.5em 0;
+                font-size: 1em;
+                line-height: 1.2;
+                letter-spacing: 0.05em;
+            }
+        }
+    }  
+
+}

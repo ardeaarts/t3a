@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Luke Connolly -- Designer-- @kidminded
+    Gene Gurvich -- Developer-- @genegurvich
+    Yuan Ma -- Developer-- @yuanyma
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, LESS
+    Normalize.css, jQuery, Modernizr
+    Python/Django
+    Postgres

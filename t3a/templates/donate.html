@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block body-id %}page--donate{% endblock %}
+
+{% block content %}
+<!-- <div class="bg-stars-background" data-0="background-position:0px 0px;" data-end="background-position:0px -800px;"></div> -->
+{# <div class="bg-stars-midground" data-0="background-position:0px 0px;" data-end="background-position:0px -1400px;"></div> #}
+{# <div class="bg-stars-foreground" data-0="background-position:0px 0px;" data-end="background-position:0px -2000px;"></div> #}
+
+<section class="section--donate section--form--centered">
+    <h1>Join Our Mission</h1>
+    <div class="section--content">
+        <p>Use the button below to donate securely using PayPal.<br/>
+        We appreciate your support!</p>
+        <div class="section--paypal">
+          <h2>Donate via PayPal</h2>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="9V3CQJEL8JXX6">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
